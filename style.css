@@ -1,1 +1,27 @@
+/* ===================================================
+   FOOTER — shoreline
+=================================================== */
+.main-footer {
+  position: relative;
+  z-index: 0;
+  color: var(--light rgb(167, 167, 167));
+  padding-top: 4rem;
+  text-align: center;
+  overflow: hidden;
+}
 
+.footer-container {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.main-footer a { text-decoration: underline; }
+
+.repo-note { font-size: 0.8rem; opacity: 0.85; }
+
+.footer-text {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
