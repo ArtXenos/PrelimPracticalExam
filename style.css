@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/* ==========================================================================
-   Global Resets & Typography
-   ========================================================================== */
 :root {
   --primary-maroon: #BE4D5D;
   --bg-light-gray: #ffffff;
@@ -15,7 +11,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica", Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   color: #333333;
 }
@@ -24,32 +21,41 @@ body {
   color: var(--primary-maroon);
 }
 
-/* ==========================================================================
-   Header & Navigation
-   ========================================================================== */
+/* Header & Navigation */
 .main-header {
   border-bottom: 2px solid var(--card-border-pink);
-  padding: 15px 40px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .logo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #000000;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
   text-decoration: none;
+  display: inline-flex;
+  letter-spacing: -0.3px;
+  align-items: baseline
 }
 
 .logo .highlight {
   color: var(--primary-maroon);
-  font-weight: 400;
-  margin-left: 3px;
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 4px;
 }
 
 .nav-list {
@@ -58,20 +64,23 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .nav-link {
   color: var(--text-muted);
   font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .nav-link.active {
   color: var(--primary-maroon);
+  border-bottom: 2px solid var(--primary-maroon);
+  padding-bottom: 2px;
 }
 
-/* ==========================================================================
-   Shared Section Structural Layouts
-   ========================================================================== */
+/* Shared Section Structural Layouts */
 section {
   padding: 60px 20px;
   text-align: center;
@@ -102,15 +111,18 @@ section {
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 40px;
   color: var(--text-dark);
-  font-weight: bold;
+  font-weight: 800;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.2;
 }
 
 .hero-title .highlight-text {
   color: var(--primary-maroon);
+  font-weight: 800;
 }
 
 .hero-subtitle {
@@ -121,9 +133,7 @@ section {
   line-height: 1.7;
 }
 
-/* ==========================================================================
-   Section 2: Three Centennial Pillars Grid
-   ========================================================================== */
+/* Section 2: Three Centennial Pillars Grid */
 .pillars-section {
   background-color: var(--bg-section-alt);
 }
@@ -160,9 +170,7 @@ section {
   margin: 0;
 }
 
-/* ==========================================================================
-   Section 3: Program Offerings Matrix Table
-   ========================================================================== */
+/* Section 3: Program Offerings Matrix Table */
 .table-section {
   background-color: var(--bg-light-gray);
 }
@@ -207,9 +215,7 @@ section {
   width: 45%;
 }
 
-/* ==========================================================================
-   Section 4: Admissions Inquiry Form
-   ========================================================================== */
+/* Section 4: Admissions Inquiry Form */
 .form-section {
   background-color: var(--bg-section-alt);
 }
@@ -281,9 +287,7 @@ section {
   color: #ffffff;
 }
 
-/* ==========================================================================
-   Footer System
-   ========================================================================== */
+/* Footer System */
 .main-footer {
   background-color: #dfdddd;
   padding: 30px 20px;
@@ -295,7 +299,8 @@ section {
   font-size: 11px;
   color: #202020;
   margin: 0;
-=======
+}
+
 .main-header {
   background-color: #ffffff;
   border-bottom: 4px solid #923f68;
@@ -318,5 +323,51 @@ section {
     color: #1d1d1d;
     background-color: #dfdddd;
     overflow: hidden;
->>>>>>> 347084234d4ae9fb8b5639026e0f164198e1f7e3
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 12px 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .hero-section {
+    padding: 45px 15px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+
+  .pillars-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pillar-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .specs-table {
+    min-width: 600px; 
+  }
+
+  .form-wrapper {
+    padding: 25px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
