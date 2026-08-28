@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ==========================================================================
    Global Resets & Typography
    ========================================================================== */
@@ -294,4 +295,28 @@ section {
   font-size: 11px;
   color: #202020;
   margin: 0;
+=======
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #923f68;
+}
+
+
+.main-footer {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 40px;
+    text-align: center;
+    
+    
+    border-top: 1px solid #d3abc6;
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    
+    color: #1d1d1d;
+    background-color: #dfdddd;
+    overflow: hidden;
+>>>>>>> 347084234d4ae9fb8b5639026e0f164198e1f7e3
 }
